@@ -1,0 +1,68 @@
+<section class="section">
+    <app-nav-bar></app-nav-bar>
+    <div class="container mt-4">
+        <h5 class="h4 mb-4" style="color:black !important">Category</h5>
+        <form class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <label for="Name" class="form-label">Name<strong>*</strong></label>
+                    <div class="input_box">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-remote="Category Name; is invalid." data-val-remote-additionalfields="*.Name,*.Id"
+                            data-val-remote-type="Post" data-val-remote-url="/CategoryList/CheckDuplicateCategory"
+                            data-val-required="Please enter Category Name." id="Name" name="Name" type="text"
+                            value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Name"
+                            data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="Displayorder" class="form-label">Display Order<strong>*</strong></label>
+                    <div class="input_box">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-number="The field Category Order must be a number."
+                            data-val-required="The Category Order field is required." id="DisplayOrder"
+                            name="DisplayOrder" type="number" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="DisplayOrder"
+                            data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="PatentCategory" class="form-label">Parent Category</label>
+                    <div class="input_box">
+                        <select class="form-select" id="Category" name="ParentId">
+                            <option value="">--Select Category--</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                            <option value="">option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form_input_box">
+                        <div class="form-group">
+                            <label for="Description" class="form-label">Description</label>
+                            <div class="input_box">
+                                <textarea class="form-control" cols="20" id="Description" name="Description" rows="2"
+                                    style="min-height:80px">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label" for="">Active</label>
+                    <div class="form-check form-switch">
+                        <input checked="true" class="form-check-input" data-val="true"
+                            data-val-required="The Active field is required." id="IsActive" name="IsActive"
+                            type="checkbox" value="true" /><input name="IsActive" type="hidden" value="false" />
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <button class="btn btn-primary btn-md" type="submit" id="btnsave">Save</button>
+            <a routerLink="/category" class="btn btn-danger float-right right mx-2">Back To List</a>
+        </form>
+    </div>
+</section>

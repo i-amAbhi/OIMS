@@ -1,0 +1,99 @@
+<section class="section">
+    <app-nav-bar></app-nav-bar>
+    <div class="container mt-4">
+        <h4 class="h4 mb-4">Employee</h4>
+        <form class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label">Employee Code<strong>*</strong></label>
+                        <input class="form-control" data-val="true" data-val-remote="&#39;Code&#39; is invalid."
+                            data-val-remote-additionalfields="*.Code,*.Id" data-val-remote-type="Post"
+                            data-val-remote-url="/Employee/CheckDuplicateEmployee"
+                            data-val-required="Employee Code is required." id="Code" name="Code"
+                            onkeyup="InputToUpper(this);" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Code"
+                            data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <label class="form-label">First Name<strong>*</strong></label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-required="FirstName is required." id="FirstName" name="FirstName" type="text"
+                        value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="FirstName"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-sm-5">
+                    <label class="form-label">Last Name<strong>*</strong></label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-required="LastName is required." id="LastName" name="LastName" type="text" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="LastName"
+                        data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-md-5">
+                    <label class="form-label">User Name<strong>*</strong></label>
+
+                    <input class="form-control text-box single-line" data-val="true" data-val-regex="Use letters only."
+                        data-val-regex-pattern="^[a-zA-Z ]+$" data-val-required="Name is required." id="UserName"
+                        name="UserName" type="text" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="UserName"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Email<strong>*</strong></label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-regex="Please enter a valid e-mail adress"
+                        data-val-regex-pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                        data-val-required="Email is required." id="EmailId" name="EmailId" type="email" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="EmailId"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Department<strong>*</strong></label>
+                    <select class="form-select" data-val="true" data-val-required="Please Select the Department."
+                        id="DeptId" name="DeptId">
+                        <option value="">--Select Department--</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="DeptId"
+                        data-valmsg-replace="true"></span>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <label class="form-label">Phone Number<strong>*</strong></label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-regex="Invalid Mobile Number." data-val-regex-pattern="^([0-9]{10})$"
+                        data-val-required="Mobile number is required." id="PhoneNo" name="PhoneNo" type="text"
+                        value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="PhoneNo"
+                        data-valmsg-replace="true"></span>
+                </div>
+
+                <br />
+                <div class="col-md-5">
+                    <label class="form-label">Date of joining: </label>
+                    <input class="form-control input-sm datepicker" data-val="true"
+                        data-val-date="The field Date Of Joining must be a date."
+                        data-val-required="The Date Of Joining field is required." id="txtContactDOB" max="2022-12-14"
+                        name="DOJ" placeholder="Purchase Date" type="date" value="" />
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label" for="">Active</label>
+                    <div class="form-check form-switch" data-on>
+                        <input checked="true" class="form-check-input" data-val="true"
+                            data-val-required="The Active field is required." id="IsActive" name="IsActive"
+                            type="checkbox" value="true" /><input name="IsActive" type="hidden" value="false" />
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <button class="btn btn-primary btn-md" type="submit" id="btnemployee">Save</button>
+            <a href="/Employee/Index" class="btn btn-danger float-right right mx-2">Back To List</a>
+        </form>
+    </div>
+</section>

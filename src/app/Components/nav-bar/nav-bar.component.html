@@ -1,0 +1,56 @@
+<nav class="navbar navbar-light text-dark navbar-expand-lg navbar-fixed-top">
+    <div class="container">
+        <div class="logo">
+            <a routerLink="/dashboard"><img src="./assets/oims-logo.png" width="80"></a>
+        </div>
+        <div class="d-flex align-items-center justify-content-end">
+            <ul class="navbar-nav navbar-right text-decoration-none">
+                <li class="nav-item"> <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard
+                    </a></li>
+                <li class="nav-item"> <a class="nav-link" routerLink="/category" routerLinkActive="active">Category </a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" routerLink="/products" routerLinkActive="active">Product </a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" routerLink="/employee" routerLinkActive="active">Employee </a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" routerLink="/inward" routerLinkActive="active">Inward </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown"> 
+                        <div class="dropdown nav-item">
+                            <a class="nav-link">System</a>
+                            <ul class="dropdown-menu table-hover text-small shadow ">
+                                <li><a class="dropdown-item" routerLink="/commonLookup" routerLinkActive="active">Common Lookup</a></li>
+                                <li><a class="dropdown-item" routerLink="/supplier" routerLinkActive="active">Supplier</a></li>
+                                <li><a class="dropdown-item" routerLink="/dept" routerLinkActive="active">Department</a></li>
+                                <li><a class="dropdown-item" routerLink="/status" routerLinkActive="active">Status</a></li>
+                                <li><a class="dropdown-item" routerLink="/productsAssigned" routerLinkActive="active">Product Assigned</a></li>
+                                <li><a class="dropdown-item" routerLink="/module" routerLinkActive="active">Module</a></li>
+                                <li><a class="dropdown-item" routerLink="/roles" routerLinkActive="active">Roles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/report" routerLinkActive="active">Report</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center justify-content-end " style="margin-left: 50px;" >
+                <div class="dropdown">
+                    <div class="toprightbar d-flex align-items-center justify-content-end">
+                        <div class="dropdown">
+                            <div class="user_name dropdown nav-item text-small"> {{User_Name}}
+                                <span class="user_img">{{User_Name[0]}}</span>
+                                <ul class="dropdown-menu table-hover text-small shadow ">
+                                    <li><a class="dropdown-item" routerLink="/changePassword">Change Password</a></li>
+                                    <li><a class="dropdown-item" routerLink="/">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

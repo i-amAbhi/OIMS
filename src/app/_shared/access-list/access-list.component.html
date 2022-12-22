@@ -1,0 +1,415 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <!-- Page Heading -->
+
+    <div class="mt-4">
+        <div class="d-flex justify-content-between">
+            <span class="d-flex pull-left">
+                <h4>Access List</h4>
+            </span>
+            <!-- <div class="d-flex pull-right">
+                <a class="btn btn-primary md-big" style="background-color: rgb(45, 45, 154); color: white !important"
+                    routerLink="/addInward">Add</a> -->
+                <!-- <a href="/ExcelData/ExportCategoryToExcel" class="btn btn-primary md-big mx-2"
+                    style="background-color: #038937;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                </a> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between" style="margin-top: 30px;">
+        <div class="col-md-10">
+            <div class="table-responsive d-flex justify-content-between" style="margin-top: 35px;">
+                <table id="RoleRights" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Form Name
+                            </th>
+                            <th>All
+                            </th>
+                            <th>Is Menu
+                            </th>
+                            <th>View
+                            </th>
+                            <th>Insert
+                            </th>
+                            <th>Edit
+                            </th>
+                            <th>Delete
+                            </th>
+                        </tr>
+                    </thead>    
+                        <tbody>
+                            <tr class="align-middle" id="row_7">
+                                <td>
+                                    <input data-val="true" data-val-number="The field MenuId must be a number." data-val-required="The MenuId field is required." id="item_MenuId" name="item.MenuId" type="hidden" value="7" />
+                                    System
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_7" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(7)" id="allowmenu_7" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(7)" id="View_7" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(7)" id="Insert_7" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(7)" id="Update_7" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(7)" id="Delete_7" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_8">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="8" />
+                                    System >>  Forms
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_8" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(8)" id="allowmenu_8" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(8)" id="View_8" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(8)" id="Insert_8" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(8)" id="Update_8" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(8)" id="Delete_8" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_9">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="9" />
+                                    System >> Status
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_9" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(9)" id="allowmenu_9" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(9)" id="View_9" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(9)" id="Insert_9" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(9)" id="Update_9" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(9)" id="Delete_9" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_10">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="10" />
+                                    System >> Supplier
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_10" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(10)" id="allowmenu_10" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(10)" id="View_10" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(10)" id="Insert_10" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(10)" id="Update_10" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(10)" id="Delete_10" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_11">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="11" />
+                                    Employee
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_11" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(11)" id="allowmenu_11" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(11)" id="View_11" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(11)" id="Insert_11" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(11)" id="Update_11" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(11)" id="Delete_11" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_12">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="12" />
+                                    Product
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_12" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(12)" id="allowmenu_12" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(12)" id="View_12" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(12)" id="Insert_12" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(12)" id="Update_12" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(12)" id="Delete_12" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_13">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="13" />
+                                    System >> Common Lookup
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_13" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(13)" id="allowmenu_13" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(13)" id="View_13" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(13)" id="Insert_13" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(13)" id="Update_13" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(13)" id="Delete_13" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_14">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="14" />
+                                    System >> Department
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_14" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(14)" id="allowmenu_14" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(14)" id="View_14" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(14)" id="Insert_14" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(14)" id="Update_14" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(14)" id="Delete_14" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_15">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="15" />
+                                    System >> Product Employee Mapping
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_15" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(15)" id="allowmenu_15" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(15)" id="View_15" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(15)" id="Insert_15" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(15)" id="Update_15" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(15)" id="Delete_15" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_16">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="16" />
+                                    System >> Role
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_16" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(16)" id="allowmenu_16" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(16)" id="View_16" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(16)" id="Insert_16" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(16)" id="Update_16" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(16)" id="Delete_16" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_17">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="17" />
+                                    Category
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_17" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(17)" id="allowmenu_17" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(17)" id="View_17" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(17)" id="Insert_17" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(17)" id="Update_17" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(17)" id="Delete_17" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_18">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="18" />
+                                    Inward
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_18" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(18)" id="allowmenu_18" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(18)" id="View_18" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(18)" id="Insert_18" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(18)" id="Update_18" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(18)" id="Delete_18" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_19">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="19" />
+                                    Dashboard
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_19" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(19)" id="allowmenu_19" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(19)" id="View_19" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(19)" id="Insert_19" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(19)" id="Update_19" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(19)" id="Delete_19" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="align-middle" id="row_20">
+                                <td>
+                                    <input id="item_MenuId" name="item.MenuId" type="hidden" value="20" />
+                                    Home
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="Selectall" id="FullRights_20" checked=&#39;checked&#39; onclick="SelectAll(this)" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(20)" id="allowmenu_20" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(20)" id="View_20" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(20)" id="Insert_20" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(20)" id="Update_20" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="value" checked=&#39;checked&#39; class="Checkbox" onclick="CheckValue(20)" id="Delete_20" />
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

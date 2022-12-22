@@ -1,0 +1,89 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <!-- Page Heading -->
+
+    <div class="mt-4">
+        <div class="d-flex justify-content-between">
+            <span class="d-flex pull-left">
+                <h4>Common Lookup</h4>
+            </span>
+            <div class="d-flex pull-right">
+                <a class="btn btn-primary md-big" style="background-color: rgb(45, 45, 154); color: white !important"
+                (click)="open(mymodal)">Add</a>
+                
+                <ng-template #mymodal let-modal>
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="modal-basic-title">Create</h4>
+                    <button type="button"  aria-label="Close" (click)="modal.dismiss('Cross click')">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="form" class="needs-validation">
+                        <div class="row g-3 col-md-4">
+                            <div >
+                                <label for="username" class="form-label">Code<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control text-box single-line" style="width: 465px;">
+                            </div>
+                            <div >
+                                <label for="firstName" class="form-label">Type<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control text-box single-line " style="width: 465px;">
+                            </div >
+                            <div >
+                                <label for="lastName" class="form-label">Name<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control text-box single-line" style="width: 465px;">
+                            </div>
+                            <div >
+                                <label for="firstName" class="form-label">DisplayOrder<span style="color: red;">*</span></label>
+                                <input value="0" type="number" class="form-control text-box single-line" style="width: 465px;">
+                            </div>
+                            <div class="form-check form-switch">
+                                <input checked="true"class="form-check-input" type="checkbox"  > IsActive
+                            </div>
+                        </div>
+                        <br />
+                        <button class="btn btn-primary btn-primary" type="submit">Submit</button>
+                        <a href="/commonLookup" class="btn btn-danger mx-2">Cancel</a>
+                    </form>
+                </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between" style="margin-top: 30px;">
+        <div class="col-md-10">
+            <div class="table-responsive d-flex justify-content-between" style="margin-top: 35px;">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Code</th>
+                            <th>Display Order</th>
+                            <th>Active</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmedabad</td>
+                            <td>Location</td>
+                            <td>AHMEDABAD</td>
+                            <td>1</td>
+                            <td><img src="./assets/check.png" alt="delete" width="16"></td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href=""><img src="./assets/edit.png" alt="edit" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,113 @@
+<section class="section">
+    <div class="container">
+        <app-nav-bar></app-nav-bar>
+        <h4 class="h4 mt-4 mb-4">Edit Product</h4>
+        <form class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+                <input data-val="true" data-val-required="The Id field is required." id="Id" name="Id" type="hidden"
+                    value="a44f977d-dd0f-4bc1-b869-3793f98cb827" />
+                <div class="col-md-5">
+                    <label for="Category" class="form-label">Category</label>
+                    <select class="form-select" data-val="true" data-val-required="please select the category"
+                        id="CategoryId" name="CategoryId">
+                        <option value="">--Select Category--</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 2</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <label for="Code" class="form-label">Code</label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-required="Please enter Product Code" id="Code" name="Code" type="text" value="5" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Code"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-sm-5">
+                    <label for="ProductName" class="form-label">Product</label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-remote="&#39;Name&#39; is invalid." data-val-remote-additionalfields="*.Name,*.Id"
+                        data-val-remote-type="Post" data-val-remote-url="/ProductCategory/CheckDuplicateProduct"
+                        data-val-required="Please enter Product Name." id="Name" name="Name" type="text" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Name"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label for="Condition" class="form-label">Condition</label>
+                    <select class="form-select" id="ConditionId" name="ConditionId">
+                        <option value="">--Select Condition--</option>
+                        <option value="9d55dc89-e4c3-4a3f-b53b-9b9350d8e96f">GOOD</option>
+                        <option selected="selected" value="f527700f-bc81-4714-b7d0-d97d580b9e58">POOR</option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="ModelNo" class="form-label">Model No.</label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-required="Please enter ModelNo." id="ModelNo" name="ModelNo" type="text" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ModelNo"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label for="SerialNo" class="form-label">Serial No.</label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-required="Please enter SerialNo." id="SerialNo" name="SerialNo" type="text" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="SerialNo"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label for="Location" class="form-label">Location</label>
+                    <select class="form-select" data-val="true" data-val-required="Please select the location"
+                        id="Location" name="LocationId">
+                        <option value="">--Select Location--</option>
+                        <option selected="selected" value="">Option 1</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 2</option>
+                    </select>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="PatentCategory" class="form-label">Status</label>
+                    <div class="input_box">
+                        <select class="form-select" id="Status" name="Status">
+                            <option value="">--Select Status--</option>
+                            <option selected="selected" value="">Option 1</option>
+                            <option value="">Option 3</option>
+                            <option value="">Option 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label class="form-label" for="FileName">FileName</label>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="FileName"
+                            data-valmsg-replace="true"></span>
+                        <div class="col-md-10">
+                            <input type="file" id="file" name="file" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Purchase Date: </label>
+                    <input class="form-control input-sm datepicker" data-val="true"
+                        data-val-date="The field PurchaseDate must be a date."
+                        data-val-required="The PurchaseDate field is required." id="txtContactDOB" max="2022-12-15"
+                        name="PurchaseDate" placeholder="Purchase Date" type="date" value="2022-05-13" />
+                </div>
+
+                <div class="form_input_box">
+                    <div class="form-group">
+                        <label class="form-check-label" for="">Active</label>
+                        <div class="form-check form-switch">
+                            <input checked="checked" class="form-check-input" data-val="true"
+                                data-val-required="The Active field is required." id="IsActive" name="IsActive"
+                                type="checkbox" value="true" /><input name="IsActive" type="hidden" value="false" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <button class="btn btn-primary btn-md" type="submit" id="btnsave">Save</button>
+            <a href="/Productcategory/Index" class="btn btn-danger float-right right mx-4">Back To List</a>
+        </form>
+    </div>
+</section>

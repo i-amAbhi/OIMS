@@ -1,0 +1,21 @@
+.user_img {
+    border: 10px solid rgb(40, 40, 233);
+    border-radius: 50%;
+    background-color: rgb(40, 40, 233);
+    color: white !important;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 19px;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /* /Without this, clicking will make it sticky/ */
+      pointer-events: none;
+  }

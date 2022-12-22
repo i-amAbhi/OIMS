@@ -1,0 +1,23 @@
+.login-form {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(153, 142, 142, 0.754);
+    padding: 15px ;
+    border-color: black;
+}
+
+.container {
+    padding-top: 50px;
+} 
+
+.login-logo{
+    padding-left: 95px;
+    padding-bottom: 25px;
+} 
+
+.rememberMe{
+    text-align: end;
+} 
+
+.forgotPassword{
+    margin-left: 200px;
+} 

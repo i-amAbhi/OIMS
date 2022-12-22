@@ -1,0 +1,56 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <!-- Page Heading -->
+
+    <div class="mt-4">
+        <div class="d-flex justify-content-between">
+            <span class="d-flex pull-left">
+                <h4>Roles List</h4>
+            </span>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between" style="margin-top: 30px;">
+        <div class="col-md-10">
+            <div class="table-responsive d-flex justify-content-between" style="margin-top: 35px;">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Role Code</th>
+                            <th>Active</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Administration</td>
+                            <td>ADMIN</td>
+                            <td><img src="./assets/check.png" alt="edit" width="16"></td>
+                            <td>
+                                <div class="action-icons">
+                                    <a routerLink="/assignRoles"><img src="./assets/Setting.png" alt="edit" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Manager</td>
+                            <td>MGR</td>
+                            <td><img src="./assets/check.png" alt="edit" width="16"></td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href=""><img src="./assets/Setting.png" alt="edit" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

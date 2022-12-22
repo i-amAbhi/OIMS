@@ -1,0 +1,66 @@
+<section class="section">
+    <app-nav-bar></app-nav-bar>
+    <div class="container mt-4">
+        <h4 class="h4 mb-4">Inward</h4>
+        <form class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+
+                <div class="col-md-5">
+                    <label for="ProductId" class="form-label">Product Name<strong>*</strong></label>
+                    <select class="form-select" data-val="true" data-val-required="The ProductId field is required."
+                        id="Product" name="ProductId">
+                        <option value="">Select Product</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="ProductId"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label for="Supplier" class="form-label">Supplier Name</label>
+                    <select class="form-select" data-val="true" data-val-required="The SupplierId field is required."
+                        id="Supplier" name="SupplierId">
+                        <option value="">Select Supplier</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="SupplierId"
+                        data-valmsg-replace="true"></span>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Purchase Date: </label>
+                    <input class="form-control input-sm datepicker" data-val="true"
+                        data-val-date="The field Purchase Date must be a date."
+                        data-val-required="The Purchase Date field is required." id="txtContactDOB" max="2022-12-14"
+                        name="PurchaseDate" placeholder="Purchase Date" type="date" value="" />
+                </div>
+                <div class="col-md-3">
+                    <label for="Purchase Qty" class="form-label">Purchase Qty<strong>*</strong></label>
+                    <input class="form-control text-box single-line" data-val="true"
+                        data-val-number="The field Purchase Qty must be a number."
+                        data-val-required="The Purchase Qty field is required." id="PurchaseQty" name="PurchaseQty"
+                        type="number" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="PurchaseQty"
+                        data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <br />
+            <div class="col-md-3">
+                <label for="Price" class="form-label">Cost<strong>*</strong></label>
+                <input class="form-control text-box single-line" data-val="true"
+                    data-val-number="The field Cost must be a number." data-val-required="The Cost field is required."
+                    id="Price" name="Price" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="Price"
+                    data-valmsg-replace="true"></span>
+            </div>
+            <br />
+            <hr>
+            <div class="mt-4">
+                <button class="btn btn-primary btn-md" type="submit" id="btninward">Submit</button>
+                <a href="/Inward/Index" class="btn btn-danger float-right right mx-2">Back To List</a>
+            </div>
+        </form>
+    </div>
+</section>
